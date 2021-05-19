@@ -350,21 +350,15 @@ header .header__content {
   background: linear-gradient(to right, #fbbd61, #ec7532);
 }
 .showTime__content #showTime-TabContent .showTime__item {
-  display: flex;
-  padding: 50px 0;
+  padding: 40px 0;
   border-bottom: 1px solid rgba(128, 128, 128, 0.527);
-}
-.showTime__item .showTime__img {
-  width: 15%;
-  margin-right: 30px;
-  border-radius: 10px;
 }
 .showTime__item .showTime__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 10px;
 }
+
 .showTime__item .showTime__text p {
   margin: 0;
 }
@@ -387,9 +381,8 @@ header .header__content {
   display: block;
   padding: 20px 0;
 }
+
 .showTime__item .showTime__text .showTime__view {
-  display: flex;
-  justify-content: space-between;
   padding-top: 20px;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -403,7 +396,7 @@ header .header__content {
   background-color: #7171714d;
   border-radius: 5px;
 }
-.showTime__view .showTime_left .showTime__block {
+.showTime__view .showTime_left .showTime__lock {
   background-color: #71717125;
   color: rgba(128, 128, 128, 0.699);
 }
@@ -421,3 +414,4 @@ header .header__content {
   background-color: rgba(0, 0, 0, 0.719);
   margin-left: 5px;
 }
+/* comingSoon */
