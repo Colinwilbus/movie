@@ -31,6 +31,48 @@
 </head>
 
 <body>
+    <!-- navbarhidden -->
+    <section class="navbarhidden" id="navbarhiddenid">
+        <div class="navbarhidden__overlay container">
+            <div class="navbarhidden__content ">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0 ">
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="img-fluid" src="./img/logo.svg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarhidden"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarhidden">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WHAT'S ON</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SHORTCODES</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#">
+                                    NEWS
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">NEWS SINGLE</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </section>
     <!-- header -->
     <header>
         <div class="header__content container  ">
@@ -49,7 +91,7 @@
             </div>
             <div class="header__bot">
                 <nav class="navbar navbar-expand-lg navbar-dark p-0 ">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="./index.html">
                         <img src="./img/logo.svg" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMovie"
@@ -86,7 +128,6 @@
         </div>
     </header>
     <!-- myCarousel -->
-    <!--  -->
     <section class="myCarousel">
         <div class="myCarousel__content ">
             <div id="carouselMovie" class="carousel slide carousel-fade " data-ride="carousel">
@@ -1541,6 +1582,7 @@
 
         </div>
     </section>
+    <!-- footer -->
     <footer>
         <div class="footer__content container">
             <div class="footer__top">
@@ -1587,7 +1629,6 @@
     </footer>
 
 
-
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- bs4 -->
@@ -1625,6 +1666,17 @@
             prevArrow: '<i class="fa fa-angle-left"></i>',
             nextArrow: '<i class="fa fa-angle-right"></i>',
         });
+    </script>
+    <!-- navbarhidden -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+                document.getElementById("navbarhiddenid").style.top = "0";
+            } else {
+                document.getElementById("navbarhiddenid").style.top = "-100px";
+            }
+        }
     </script>
 </body>
 
